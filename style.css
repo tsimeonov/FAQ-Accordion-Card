@@ -29,6 +29,8 @@ body {
   border-radius: 25px;
   min-width: 400px;
   max-width: 1200px;
+  min-height: 500px;
+  max-height: 700px;
   height: 50%;
   position: relative;
 }
@@ -38,7 +40,7 @@ body {
 }
 
 img[alt="background pattern"] {
-  position: absolute;
+  /* position: absolute;
   left: -610px;
   bottom: -120px;
   clip-path: polygon(
@@ -49,22 +51,41 @@ img[alt="background pattern"] {
     0 100%,
     0% 50%
   );
-  width: 70em;
+  width: 70em; */
+  width: 42em;
+  position: absolute;
+  left: -68%;
+  right: 0;
+  top: -4%;
+  clip: rect(0px, 674px, 658px, 139px);
+  margin: auto;
 }
 
 img[alt="ilustration-woman"] {
-  position: absolute;
+  /* position: absolute;
   top: 120px;
   left: -40px;
   clip: rect(-17px, 552px, 424px, 40px);
-  width: 34.375em;
+  width: 34.375em; */
+  width: 35em;
+  position: absolute;
+  left: -3%;
+  right: 0;
+  top: 16%;
+  clip: rect(-17px, 582px, 444px, 35px);
 }
 
 img[alt="ilustration-box"] {
-  position: absolute;
+  /* position: absolute;
   left: -80px;
   bottom: 190px;
-  width: 12em;
+  width: 12em; */
+  width: 16em;
+  position: absolute;
+  left: -96%;
+  right: 0;
+  top: 40%;
+  margin: auto;
 }
 
 .faq_Section {
@@ -187,7 +208,7 @@ img[alt="ilustration-box"] {
     position: absolute;
     left: -40%;
     right: 0;
-    top: -65%;
+    top: -7%;
     margin: auto;
   }
 
@@ -225,11 +246,11 @@ img[alt="ilustration-box"] {
   }
 
   img[alt="ilustration-box"] {
-    width: 7em;
+    width: 8em;
     position: absolute;
     left: -45%;
     right: 0;
-    top: -67%;
+    top: -7%;
     margin: auto;
   }
 
