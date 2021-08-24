@@ -1,0 +1,246 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(84, 78, 223);
+  background: linear-gradient(
+    0deg,
+    rgba(84, 78, 223, 1) 0%,
+    rgba(150, 88, 226, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 25px;
+  min-width: 400px;
+  max-width: 1200px;
+  height: 50%;
+  position: relative;
+}
+
+.imgage {
+  width: 50%;
+}
+
+img[alt="background pattern"] {
+  position: absolute;
+  left: -610px;
+  bottom: -120px;
+  clip-path: polygon(
+    2200% -449%,
+    -270% 0,
+    150% -360%,
+    100% 99%,
+    0 100%,
+    0% 50%
+  );
+  width: 70em;
+}
+
+img[alt="ilustration-woman"] {
+  position: absolute;
+  top: 120px;
+  left: -40px;
+  clip: rect(-17px, 552px, 424px, 40px);
+  width: 34.375em;
+}
+
+img[alt="ilustration-box"] {
+  position: absolute;
+  left: -80px;
+  bottom: 190px;
+  width: 12em;
+}
+
+.faq_Section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  text-align: left;
+}
+
+.faq_heading {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.2em;
+  padding: 70px 0 50px 60px;
+}
+
+.accordion {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  border: none;
+  background-color: #fff;
+  padding: 5px;
+  border-bottom: 1.5px solid rgba(185, 182, 182, 0.452);
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #808080;
+  position: relative;
+}
+
+.accordion:after {
+  content: "\02C5";
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: rgb(197, 120, 91);
+}
+
+.active::after {
+  content: "\02C5";
+  transform: rotate(180deg);
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+/* Add the .active class with JS  */
+.active {
+  display: inline-block;
+  font-weight: 900;
+  color: black;
+  border: none;
+}
+
+.accordion:hover {
+  cursor: pointer;
+}
+
+/* Note: Hidded by default */
+
+.panel {
+  margin-left: 45px;
+  margin-bottom: 20px;
+  padding: 2px 20px;
+  width: 85%;
+  color: #808080;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+@media (max-width: 1260px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1144px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    position: relative;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .faq_Section {
+    width: 100%;
+  }
+
+  img[alt="background pattern"] {
+    width: 25em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -130%;
+    margin: auto;
+  }
+
+  img[alt="ilustration-woman"] {
+    width: 25em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -27%;
+    margin: auto;
+    clip: rect(-17px, 552px, 424px, -20px);
+  }
+
+  img[alt="ilustration-box"] {
+    width: 8em;
+    position: absolute;
+    left: -40%;
+    right: 0;
+    top: -65%;
+    margin: auto;
+  }
+
+  .faq_heading {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+
+  .panel {
+    padding-left: 34px;
+    margin-left: 45px;
+    width: 86%;
+  }
+}
+
+@media (max-width: 835px) {
+  img[alt="background pattern"] {
+    width: 20em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -130%;
+    margin: auto;
+  }
+
+  img[alt="ilustration-woman"] {
+    width: 20em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -22%;
+    margin: auto;
+    clip: rect(-17px, 552px, 424px, -20px);
+  }
+
+  img[alt="ilustration-box"] {
+    width: 7em;
+    position: absolute;
+    left: -45%;
+    right: 0;
+    top: -67%;
+    margin: auto;
+  }
+
+  .faq_heading {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+
+  .panel {
+    padding-left: 0px;
+    width: 80%;
+  }
+}
