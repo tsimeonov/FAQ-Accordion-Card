@@ -12,7 +12,7 @@ Users should be a able to:
 
 ## Links
 
-- Live Site URL:
+- Live Site URL: https://tsimeonov.github.io/Newbie-_-FAQ-Accordion-Card/
 
 # My Process
 
